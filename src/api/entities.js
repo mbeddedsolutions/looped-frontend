@@ -24,7 +24,7 @@ export const CallHistory = {
       {
         id: "101",
         phone_id: "1",
-        contact_name: "Alice Johnson",
+        contact_name: "Maddy Dweck",
         duration: "2m 15s",
         // ✅ valid ISO timestamp
         call_date: new Date(now.getTime() - 1000 * 60 * 5).toISOString(),
@@ -32,7 +32,7 @@ export const CallHistory = {
       {
         id: "102",
         phone_id: "1",
-        contact_name: "Bob Lee",
+        contact_name: "Sim DAWG",
         duration: "1m 45s",
         // ✅ valid ISO timestamp
         call_date: new Date(now.getTime() - 1000 * 60 * 15).toISOString(),
@@ -40,7 +40,7 @@ export const CallHistory = {
       {
         id: "103",
         phone_id: "2",
-        contact_name: "Charlie Kim",
+        contact_name: "Buter",
         duration: "3m 20s",
         // ✅ valid ISO timestamp
         call_date: new Date(now.getTime() - 1000 * 60 * 30).toISOString(),
