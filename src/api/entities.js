@@ -9,13 +9,19 @@ export const Contact = {
   create: async (data) => ({ id: Math.random(), ...data }),
 };
 
-// src/api/entities.js
 export const Phone = {
-  list: async () => [
-    { id: "1", name: "Home Phone" },
-    { id: "2", name: "Office Line" },
-  ],
+  list: async () => {
+    try {
+      const res = await fetch("http://looped.local:3001/api/lines");
+      if (!res.ok) throw new Error("Failed to fetch lines");
+      return await res.json();
+    } catch (err) {
+      console.error("Error fetching phones:", err);
+      return [];
+    }
+  },
 };
+
 
 export const CallHistory = {
   list: async () => {
